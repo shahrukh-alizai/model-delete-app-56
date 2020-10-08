@@ -35,13 +35,6 @@ class HomePage(models.Model):
         return "body"
 
 
-class Student(models.Model):
-    "Generated Model"
-    demo = models.CharField(
-        max_length=256,
-    )
-
-
 class Test(models.Model):
     "Generated Model"
     name = models.CharField(

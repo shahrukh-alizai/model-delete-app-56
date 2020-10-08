@@ -1,12 +1,6 @@
 from django.urls import path, include
 from rest_framework.routers import DefaultRouter
-from .viewsets import (
-    CustomTextViewSet,
-    HomePageViewSet,
-    ProfileViewSet,
-    StudentViewSet,
-    TestViewSet,
-)
+from .viewsets import CustomTextViewSet, HomePageViewSet, ProfileViewSet, TestViewSet
 
 from home.api.v1.viewsets import (
     SignupViewSet,
@@ -20,7 +14,6 @@ router.register("signup", SignupViewSet, basename="signup")
 router.register("login", LoginViewSet, basename="login")
 router.register("customtext", CustomTextViewSet)
 router.register("homepage", HomePageViewSet)
-router.register("student", StudentViewSet)
 router.register("test", TestViewSet)
 router.register("profile", ProfileViewSet)
 
