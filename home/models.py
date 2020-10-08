@@ -40,10 +40,3 @@ class Test(models.Model):
     name = models.CharField(
         max_length=256,
     )
-
-
-class Profile(models.Model):
-    "Generated Model"
-    title = models.CharField(
-        max_length=256,
-    )
